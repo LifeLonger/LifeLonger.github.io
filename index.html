@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="LifeLonger: A Benchmark for Continual Disease Classification.">
+  <meta name="keywords" content=">LifeLonger, Continual Learning, Medical Imaging">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LifeLonger: A Benchmark for Continual Disease Classification</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">LifeLonger: A Benchmark for Continual Disease Classification</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.nl/citations?user=n7GnOJoAAAAJ&hl=nl&oi=ao">Mohammad Mahdi Derakhshani</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.nl/citations?user=2rFidrcAAAAJ&hl=nl&oi=ao">Ivona Najdenkoska<</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.nl/citations?user=ovqQIMUAAAAJ&hl=nl">Tom van Sonsbeek</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.nl/citations?user=DnBb3e0AAAAJ&hl=nl&oi=ao">Xiantong Zhen</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.nl/citations?user=j5K7HPoAAAAJ&hl=nl&oi=ao">Dwarikanath Mahapatra</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.nl/citations?user=pdu8f3sAAAAJ&hl=nl&oi=ao">Marcel Worring</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.nl/citations?user=0uKdbscAAAAJ&hl=nl&oi=ao">Cees Snoek</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Amsterdam, The Netherlands,</span>
+            <span class="author-block"><sup>2</sup>Inception Institute of Artificial Intelligence, Abu Dhabi, UAE</span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal contribution</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2204.05737"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/mmderakhshani/LifeLonger"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <figure>
+        <img src="./static/images/task-class-cross-domain-il.png" alt="light_and_fark"  style="width:100%">
+        <figcaption class ="podpis">Linear Probe (<font color="red"> 29.23%</font>)</figcaption>
+      </figure>
+      <h2 class="subtitle has-text-centered">
+        Continual learning scenarios covered in the LifeLonger benchmark: task incremental learning, class incremental learning and cross-domain incremental learning. Each scenario uses a random subset of the incoming data stream and its label space and each domain is a separate dataset (see Table \ref{tab:data}). The classifier is shared across all tasks and domains and it yields output logits (denoted by colored circles) representing the current task (and/or domain).
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--##################################   Abstract   ##################################-->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Deep learning models have shown a great effectiveness in recognition of findings in medical images. However, they cannot handle the ever-changing clinical environment, bringing newly annotated medical data from different sources. To exploit the incoming streams of data, these models would benefit largely from sequentially learning from new samples, without forgetting the previously obtained knowledge. In this paper we introduce LifeLonger, a benchmark for continual disease classification on the MedMNIST collection, by applying existing state-of-the-art continual learning methods. In particular, we consider three continual learning scenarios, namely, task and class incremental learning and the newly defined cross-domain incremental learning. Task and class incremental learning of diseases address the issue of classifying new samples without re-training the models from scratch, while cross-domain incremental learning addresses the issue of dealing with datasets originating from different institutions while retaining the previously obtained knowledge. We perform a thorough analysis of the performance and examine how the well-known challenges of continual learning, such as the catastrophic forgetting exhibit themselves in this setting. The encouraging results demonstrate that continual learning has a major potential to advance disease classification and to produce a more robust and efficient learning framework for clinical settings. The code repository, data partitions and baseline results for the complete benchmark will be made publicly available. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+
+  </div>
+</section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{derakhshani2022lifelonger,
+      title={LifeLonger: A Benchmark for Continual Disease Classification},
+      author={Derakhshani, Mohammad Mahdi and Najdenkoska, Ivona and van Sonsbeek, Tom and Zhen, Xiantong and Mahapatra, Dwarikanath and Worring, Marcel and Snoek, Cees GM},
+      journal={arXiv preprint arXiv:2204.05737},
+      year={2022}
+    }
+    </code></pre>
+  </div>
+</section>
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <h3 class="title">Acknowledgements</h3>
+          <p>
+            The website template was borrowed from <a href="https://nerfies.github.io/">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
